@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background-color: rgb(47, 35, 219);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+   
+   width: 80%;
+   height: 50%;
+}
+.user-details{
+   
+   
+    margin: 2rem;
+    
+}
+
+.user-details .user-name,
+.user-details .quiz-start{
+
+    display: block;
+    border: none;
+    margin: 2rem auto;
+   
+}
+
+.user-details .user-name{
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    font-size: 2rem;
+    height: 2.5rem;
+    width:75%;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+   
+
+}
+
+.user-details .user-name:focus{
+    outline: none;
+}
+
+.user-details .quiz-start {
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    transition: 0.5s all;
+    border: none;
+    color:  rgb(47, 35, 219);
+    box-shadow: 0px 10px 5px rgb(255, 255, 255,0.2);
+    min-width: 25%;
+
+}
+
+.user-details .quiz-start:hover{
+    transform:translateY(-0.75rem) ;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.quiz{
+    display: grid;
+    height: 600px;
+    width: 480px;
+   
+  grid-template-rows: 5rem auto;
+  padding: 0.5rem;
+}
+
+.quiz-head{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+   text-align: center;
+    justify-content: space-between;
+    
+}
+.quiz-head #time{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    padding: 1rem;
+}
+
+.quiz-body{
+    background-color: grey;
+    padding: 0.5rem;
+}
+
+.quiz-body h2{
+    color: white;
+    padding-left: 1.5rem;
+    margin: 0.25rem;
+}
+
+.quiz-options{
+  list-style: none;
+}
+
+.option{
+    margin: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    transition: 0.5s all;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+}
+
+.option:hover{
+    background-color: grey;
+    border: 2px solid blue;
+    
+}
+
+.next{
+    background-color: blue;
+    color: white;
+    transition: 0.3s all;
+    border-radius: 1rem;
+    font-size: 1rem;
+width: 5rem;
+padding: 0.5rem;
+margin-left: 1rem;}
+
+.next:hover{
+   color: blue;
+   background-color: white;
+    
+}
+.user-questions{
+    display: none;
+}
+
+.active{
+    background-color: green;
+}
